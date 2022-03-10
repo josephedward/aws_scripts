@@ -1,4 +1,4 @@
-aws budgets create-budget --account-id $1 --budget ‘        {
+aws budgets create-budget --account-id $1 --budget `        {
             "CalculatedSpend": {
                 "ForecastedSpend": {
                     "Amount": "1.00",
@@ -14,7 +14,7 @@ aws budgets create-budget --account-id $1 --budget ‘        {
                 "Amount": "1",
                 "Unit": "USD"
             },
-            "BudgetName": "1$ Budget",
+            "BudgetName": "$1 Budget",
             "CostTypes": {
                 "IncludeOtherSubscription": true,
                 "IncludeUpfront": true,
@@ -31,4 +31,4 @@ aws budgets create-budget --account-id $1 --budget ‘        {
             "TimeUnit": "DAILY",
             "TimePeriod": {},
             "CostFilters": {}
-        }’
+        }`
